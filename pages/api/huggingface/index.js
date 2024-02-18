@@ -18,6 +18,8 @@ export default async function handler(req, res) {
     inputs: text,
   });
 
+  console.log(response);
+  console.log(response.status_code);
   res.status(200).json({
     translated_text: response.translation_text,
   }); 
